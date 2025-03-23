@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planets</title>
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Solar System</a>
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+  
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="planets.html">Planets</a>
+              </li>
+  
+            </ul>
+            
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          
+          </div>
+        </div>
+    </nav>
+    
+    <!-- TABLE -->
+
+    <table class="table table-primary table-striped table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Place from the Sun</th>
+            <th scope="col">Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mercury</td>
+          <tr>
+            <th scope="row">2</th>
+            <td>Venus</td>
+          <tr>
+            <th scope="row">3</th>
+            <td>Earth</td>
+          <tr>
+            <th scope="row">4</th>
+            <td>Mars</td>
+          <tr>
+            <th scope="row">5</th>
+            <td>Jupiter</td>
+          <tr>
+            <th scope="row">6</th>
+            <td>Saturn</td>
+          <tr>
+            <th scope="row">7</th>
+            <td>Uranus</td>
+          <tr>
+            <th scope="row">8</th>
+            <td>Neptune</td>
+          <tr class="table table-danger">
+            <th scope="row">9</th>
+            <td>Pluto</td>
+        </tbody>
+    </table>
+    <!-- Pluto is red bc it is a dwarf planet and off-axis orbit -->
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
