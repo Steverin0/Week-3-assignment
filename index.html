@@ -1,3 +1,9 @@
+<!--Tasks: 
+1) At least 2 pages.
+2) A bootstrap navbar, table, and form.
+3) A bootstrap grid used throughout to format elements.
+4) Elements should stack vertically when viewport is small.-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,8 +16,12 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
-    <!--NAVBAR-->
+    <!--NAVBAR
+    Copy/Pasted a navbar from bootstrap's website that I liked and looked for the parts that needed changes
+    like the href, links that I wasn't using, dropdown menu that wasn't going to be used, changing the names
+    of the pages and links.-->
 
     <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
       <div class="container-fluid">
@@ -31,6 +41,9 @@
             <li class="nav-item">
               <a class="nav-link" href="planets.html">Planets</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="newsletter.html">Newsletter Signup</a>
+            </li>
 
           </ul>
           
@@ -42,13 +55,16 @@
         </div>
       </div>
     </nav>
-  <!-- HERO -->
+  <!-- HERO 
+   Had to look up what a "hero" in web design was. just a large banner usually at the top of the page
+   to capture the user's attention.-->
 
     <div>
       <img src="images/Solar system.jpg" class="img-fluid" alt="the solar system">
     </div>
 
-  <!-- WELCOME -->
+  <!-- WELCOME 
+   A Simple header with some filler welcoming text to the webpage.-->
 
     <div>
       <h1 class="text-center p-1">You live here. Get to know your neighbors.</h1>
@@ -57,7 +73,8 @@
     </div>
 
   <!-- CARDS 
-   I split this up into 3 sections until it's small bc 9 is divisble by 3 and 1, so it looks better.-->
+   I split this up into 3 sections until it's small bc 9 is divisble by 3 and 1, so it looks better.
+   the prompt requires the elements to stack vertically when small, so the class="col-sm" makes this so.-->
 
   <div class="container text-center ">
     <div class="row row-cols-sm-1 row-cols-lg-3 g-2 g-lg-3 m-3 pt-5">
@@ -167,11 +184,12 @@
     </div>
   </div>
 
-  <!-- CONTACT FORM -->
-
-  
-
   <!-- FOOTER -->
+   <footer class="pt-2 pb-2">
+    <div class="text-center p-2">
+      <h4>Heliocentric Model of the Solar System copyrighted 2025</h4>
+    </div>
+   </footer>
 
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
